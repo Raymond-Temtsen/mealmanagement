@@ -1,1 +1,2 @@
-# estores
+# A Simple Meal Planning System
+

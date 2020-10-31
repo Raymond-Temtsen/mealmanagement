@@ -1,0 +1,198 @@
+
+  <!-- Footer -->
+  <footer class="page-footer font-small black text-white darken-4 py-4">
+    <!-- Footer Elements -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-start">
+          <!-- Copyright -->
+          <div class="footer-copyright text-center bg-transparent">
+            © 2019 Copyright:
+            <a href="#"> MY MEAL PLANNER</a>
+          </div>
+          <!-- Copyright -->
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <ul class="list-unstyled d-flex mb-0">
+            <li>
+              <a class="mr-3" role="button"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a class="mr-3" role="button"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="mr-3" role="button"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="" role="button"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Elements -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- LOGIN MODAL CONTENT  -->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          {{>default/messages}}
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="/login" method="POST">
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email"name="email" class="form-control validate"required />
+            <label data-error="wrong" data-success="right"  for="defaultForm-email" >Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" name="password"class="form-control validate"required />
+            <label data-error="wrong" data-success="right"  for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-light-blue darken-4" type="submit" >Login</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- LOGIN MODAL CONTENT  -->
+
+  <!-- REGISTER MODAL CONTENT  -->
+  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="container my-5 py-5 z-depth-1">
+          <!--Section: Content-->
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+
+              <!--Grid column-->
+              <div class="col-lg-12 col-md-12">
+
+                <!-- Default form register -->
+                <form class="text-center" action="/customer/register" method="POST">
+
+                  <p class="h4 mb-4">Sign up</p>
+
+                  <div class="form-row mb-4">
+                    <div class="col">
+                      <!-- full name -->
+                      <input type="text" id="defaultRegister" class="form-control"
+                        placeholder="full name" name="fullName"required >
+                    </div>
+               
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="col">
+                      <!-- First name -->
+                      <input type="email" name="email" id="defaultRegister" class="form-control"
+                        placeholder="E-mail" required >
+                    </div>
+                    <div class="col">
+                      <!-- Last name -->
+                      <input type="password" id="defaultRegister" class="form-control" name="password" placeholder="password"required>
+                    </div>
+                       <div class="col">
+                      <!-- Last name -->
+                      <input type="password" id="defaultRegister" class="form-control" name="password2" placeholder="retype password"required>
+                    </div>
+                  </div>
+                  <div class="form-row mb-4">
+                    <div class="col">
+                      <!-- First name -->
+                      <input type="text" name="age" id="defaultRegister" class="form-control"
+                        placeholder="Age"required>
+                    </div>
+                    <div class="col">
+                         <div class="form-group">
+                                            <label for="duration">Choose Health Plan:</label>
+                                            <select  name="healthPlan" required>
+                                                <option value="" disabled selected >Choose A Plan</option>
+                                                <option value="DIABETIS">DIABETIS</option>
+                                                <option value="HYPERTENSION">HYPERTENSION</option>
+                                                <option value="CARDIOVASCULAR">CARDIOVASCULAR</option>
+                                            </select>
+                                            </div>  
+                      <!--Dropdown primary-->
+                      {{!-- <div class="dropdown">
+
+                        <!--Trigger-->
+                        <a class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Health Plan</a>
+
+
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-info">
+                          <a class="dropdown-item" href="#">DIABETIS</a>
+                          <a class="dropdown-item" href="#">HYPERTENSIOPN</a>
+                          <a class="dropdown-item" href="#">CARDIOVASCULAR PAIN</a>
+                        </div>
+                      </div> --}}
+                      <!--/Dropdown primary-->
+                    </div>
+                  </div>
+
+                  <!-- Sign up button -->
+                  <button class="btn btn-info my-4 btn-block" type="submit">Submit</button>
+                  <!-- Newsletter -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                    <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our
+                      newsletter</label>
+                  </div>
+
+                  <!-- Social register -->
+                  <p>or sign up with:</p>
+
+                  <a href="#" class="mx-1" role="button"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="mx-1" role="button"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="mx-1" role="button"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="mx-1" role="button"><i class="fab fa-github"></i></a>
+
+                  <hr>
+
+                  <!-- Terms of service -->
+                  <p>By clicking
+                    <em>Sign up</em> you agree to our
+                    <a href="" target="_blank">terms of service</a>
+
+                </form>
+                <!-- Default form register -->
+
+              </div>
+              <!--Grid column-->
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- REGISTER MODAL CONTENT  -->>
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="/js/jquery-3.4.0.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="/js/mdb.min.js"></script>
+</body>
+
+</html>

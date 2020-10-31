@@ -1,0 +1,893 @@
+  <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+                <!--Card content-->
+
+                <div class="card-body d-sm-flex justify-content-between">
+
+                    <h4 class="mb-2 mb-sm-0 pt-1">
+                        <a href="https://mdbootstrap.com/docs/jquery/" target="_blank">Admin</a>
+                        <span>/</span>
+                        <span>Meal Planner</span>
+                    </h4>
+
+                    <form class="d-flex justify-content-center">
+                        <!-- Default input -->
+                        <input type="search" placeholder="Type your query" aria-label="Search" class="form-control">
+                        <button class="btn btn-primary btn-sm my-0 p" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+            <!-- Heading -->
+  {{>default/messages}}
+
+            <div class="container">
+                <form class="md-form" method="POST" action="/admin/postMeal" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for=""></label>
+                            <input type="text" name="mealName" placeholder="MEAL NAME"required>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for=""></label>
+                            <input type="file" name="image" placeholder="Upload Image" required>
+                        </div>
+                        <div class="col">
+                               <div class="form-group">
+                                            {{!-- <label for="duration">Choose Health Plan:</label> --}}
+                                            <select  name="healthPlan" required>
+                                                <option value="" disabled selected >Choose A Plan</option>
+                                                <option value="DIABETIS">DIABETIS</option>
+                                                <option value="HYPERTENSION">HYPERTENSION</option>
+                                                <option value="CARDIOVASCULAR">CARDIOVASCULAR</option>
+                                            </select>
+                                            </div>  
+                        </div>
+                        <button type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="container my-5">
+
+
+                    <!--Section: Content-->
+                    <section class="magazine-section dark-grey-text">
+
+                        <!-- Section heading -->
+                        <h3 class="text-center font-weight-bold mb-4 pb-2">MEAL PLANS</h3>
+                        <!-- Grid row -->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Others/images/87.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 19/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 18/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-lg-0 mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 17/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-lg-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">23/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">22/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-md-0 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">21/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Others/images/87.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 19/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 18/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-lg-0 mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 17/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-lg-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">23/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">22/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-md-0 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">21/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Others/images/87.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 19/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 18/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-lg-0 mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-lg-0 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">CREATED 17/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-lg-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">23/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">22/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0 mb-3">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                                <!-- Small news -->
+                                <div class="single-news mb-4">
+
+                                    <!-- Grid row -->
+                                    <div class="row">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3">
+
+                                            <!--Image-->
+                                            <div class="view overlay rounded z-depth-1 mb-md-0 mb-4">
+                                                <img class="img-fluid"
+                                                    src="https://mdbootstrap.com/img/Photos/Slides/1.jpg"
+                                                    alt="Sample image">
+                                                <a>
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-9">
+
+                                            <!-- Excerpt -->
+                                            <p class="font-weight-bold dark-grey-text">21/08/2018</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="col-11 text-truncate pl-0">
+                                                    <a href="#!" class="dark-grey-text">EDIT</a>
+                                                </div>
+                                                <a><i class="fas fa-angle-double-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                    </div>
+                                    <!-- Grid row -->
+
+                                </div>
+                                <!-- Small news -->
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </section>
+                    <!--Section: Content-->
+
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!--Main layout-->

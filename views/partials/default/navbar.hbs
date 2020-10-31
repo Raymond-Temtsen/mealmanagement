@@ -1,0 +1,89 @@
+
+  <!-- Start your project here-->
+  <!-- <div style="height: 100vh">
+    <div class="flex-center flex-column">
+
+      <h1 class="text-hide animated fadeIn mb-4"
+        style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
+        MDBootstrap</h1>
+      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+
+      <p class="animated fadeIn text-muted">MDB Team</p>
+    </div>
+  </div> -->
+  <!-- /Start your project here-->
+
+
+
+  <!-- ====================================== Header & navbar Section ========================  -->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark black">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo"> -->
+        <h2 id="ml">MY MEAL PLANNER</h2>
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="/">HOME</a>
+          </li>
+          {{#if login}}
+            <li class="nav-item">
+            <a class="nav-link waves-effect" href="/myAccount">DASHBOARD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="/logout">LOG OUT</a>
+          </li>
+          {{else}}
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#" data-toggle="modal" data-target="#modalRegisterForm">SIGN UP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#" data-toggle="modal" data-target="#modalLoginForm">SIGN IN</a>
+          </li>
+          {{/if}}
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#">CONTACT</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link border border-light rounded waves-effect mr-2">
+              <i class="fas fa-envelope mr-1"></i>Newsletter
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/.Navbar-->
