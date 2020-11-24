@@ -54,7 +54,7 @@ app.use(
             mongooseConnection: mongoose.connection
         }),
         cookie: {
-            maxAge: 180 * 60 * 1000
+            maxAge: 120 * 60 * 1000
         }
     })
 );
@@ -89,7 +89,7 @@ app.use("/", defaultRoutes);
 app.use('/customer',customerRoutes);
 app.use('/admin',adminRoutes)
 
-// =================================================== ROUTES END =================================================
+// ================================================ ROUTES END =================================================
 
 app.use((req, res, next) => res.render("default/error404"));
 // listen...................................................................................................
